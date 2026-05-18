@@ -40,7 +40,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              href={"/all-photos"}
+              href={"/animal"}
               className="px-4 py-2 rounded-full hover:bg-green-500 hover:text-white transition-all duration-300 font-medium"
             >
               All Animals
@@ -71,19 +71,19 @@ const Navbar = () => {
           <ul className="flex flex-wrap justify-center items-center text-sm gap-3">
             <li>
               <Link
-                href={"/signup"}
+                href={"/register"}
                 className="border border-green-500 text-green-600 px-5 py-2 rounded-full hover:bg-green-500 hover:text-white transition-all duration-300 font-semibold"
               >
-                SignUp
+                Register
               </Link>
             </li>
 
             <li>
               <Link
-                href={"/signin"}
+                href={"/login"}
                 className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-5 py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold"
               >
-                SignIn
+                Login
               </Link>
             </li>
           </ul>
