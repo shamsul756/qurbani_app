@@ -40,7 +40,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              href={"/animal"}
+              href={"/allanimals"}
               className="px-4 py-2 rounded-full hover:bg-green-500 hover:text-white transition-all duration-300 font-medium"
             >
               All Animals

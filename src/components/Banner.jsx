@@ -3,7 +3,9 @@ import Link from "next/link";
 import thumbnail from "@/Assets/thumbnail.png";
 import Image from "next/image";
 
+
 const Banner = () => {
+ 
   return (
     <div className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh] overflow-hidden rounded-xl">
 
@@ -41,7 +43,7 @@ const Banner = () => {
             </Link>
 
             <Link href="/animal">
-              <Button variant="outline" className="text-white border-white">
+              <Button variant="outline" className="text-white border-white" >
                 Browse Cattle
               </Button>
             </Link>
