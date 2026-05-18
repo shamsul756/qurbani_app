@@ -36,13 +36,13 @@ const Banner = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate__animated animate__fadeInUp animate__delay-2s">
 
-            <Link href="/pricing">
+            <Link href="/QurbaniBreeds">
               <Button className="bg-white text-black hover:bg-gray-200">
                 View Pricing
               </Button>
             </Link>
 
-            <Link href="/animal">
+            <Link href="/allanimals">
               <Button variant="outline" className="text-white border-white" >
                 Browse Cattle
               </Button>

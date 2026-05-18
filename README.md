@@ -4,6 +4,16 @@
 ![alt text](image-1.png)
 <!-- banner  -->
 ![alt text](image-2.png)
+<!-- all animal  -->
+![alt text](image-3.png)
+<!-- qurbani tips  -->
+![alt text](image-5.png)
+
+<!-- qurbani breeds -->
+
+![alt text](image-6.png)
+<!-- feature card  -->
+![alt text](image-4.png)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
