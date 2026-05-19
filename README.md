@@ -14,7 +14,12 @@
 ![alt text](image-6.png)
 <!-- feature card  -->
 ![alt text](image-4.png)
-
+<!-- animal details -->
+![alt text](image-9.png)
+<!-- register part  -->
+![alt text](image-7.png)
+<!-- login part  -->
+![alt text](image-8.png)
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

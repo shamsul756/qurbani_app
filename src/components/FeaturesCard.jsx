@@ -1,65 +1,77 @@
+"use client";
+
 import Image from "next/image";
-import { Button, Card } from "@heroui/react";
-import { FaMapMarkerAlt, FaWeight, FaTag } from "react-icons/fa";
+import Link from "next/link";
+import { Card, Button } from "@heroui/react";
+import { FaMapMarkerAlt, FaWeightHanging, FaTag } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const FeaturesCardPage = ({ datas }) => {
   return (
-    <Card className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border">
-      
-      {/* Image */}
-      <div className="relative w-full h-56 ">
+    <Card className="w-full rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+
+      {/* Image Section */}
+      <div className="relative w-full h-60 overflow-hidden">
         <Image
           src={datas.image}
           alt={datas.name}
           fill
-          className="object-cover hover:scale-105 transition-transform duration-300 rounded-xl"
+          className="object-cover hover:scale-105 transition-transform duration-500"
         />
+
+        {/* Category Badge */}
+        <div className="absolute top-4 left-4">
+          <span className="bg-white/90 backdrop-blur-sm text-green-700 text-xs font-semibold px-3 py-1 rounded-full shadow">
+            {datas.category}
+          </span>
+        </div>
       </div>
 
       {/* Content */}
-      <div className="p-5 space-y-2">
+      <div className="p-6 space-y-4">
 
-        {/* Name */}
-        <h2 className="text-xl font-bold text-gray-800">
-          {datas.name}
-        </h2>
+        {/* Title */}
+        <div>
+          <h2 className="text-2xl font-bold text-gray-800">
+            {datas.name}
+          </h2>
 
-        {/* Category badge */}
-        <span className="inline-block text-xs px-3 py-1 bg-green-100 text-green-700 rounded-full">
-          {datas.category}
-        </span>
+          <p className="text-sm text-gray-500 mt-1 leading-relaxed">
+            {datas.description}
+          </p>
+        </div>
 
-        {/* Info */}
-        <p className="text-gray-600 text-sm">
-          {datas.description}
-        </p>
+        {/* Divider */}
+        <div className="border-t border-gray-200"></div>
 
         {/* Details */}
-        <div className="flex justify-between text-sm text-gray-700 pt-2">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-gray-700">
 
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-xl">
             <FaMapMarkerAlt className="text-red-500" />
-            {datas.location}
+            <span>{datas.location}</span>
           </div>
 
-          <div className="flex items-center gap-1">
-            <FaWeight className="text-blue-500" />
-            {datas.weight}kg
+          <div className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-xl">
+            <FaWeightHanging className="text-blue-500" />
+            <span>{datas.weight} kg</span>
           </div>
 
-          <div className="flex items-center gap-1 font-semibold text-green-600">
+          <div className="flex items-center gap-2 bg-green-50 px-3 py-2 rounded-xl font-semibold text-green-700">
             <FaTag />
-            ৳{datas.price}
+            <span>৳ {datas.price}</span>
           </div>
-
         </div>
-        <Button
-  variant="outline"
-  className="w-full mt-5 py-5 rounded-2xl border-green-500 text-green-600 font-semibold text-lg hover:bg-green-500 hover:text-white transition-all duration-300 shadow-sm hover:shadow-lg"
->
-  View Details
-</Button>
 
+        {/* Button */}
+        <Link href={`/allanimals/${datas.id}`} className="block">
+          <Button
+            className="w-full mt-2 bg-green-600 text-white font-semibold py-6 rounded-xl hover:bg-green-700 transition-all duration-300"
+            onClick={() => toast.success("Opening details page")}
+          >
+            View Details
+          </Button>
+        </Link>
       </div>
     </Card>
   );
