@@ -5,8 +5,11 @@ import Link from "next/link";
 import { Card, Button } from "@heroui/react";
 import { FaMapMarkerAlt, FaWeightHanging, FaTag } from "react-icons/fa";
 import { toast } from "react-toastify";
+import { authClient } from "@/lib/auth-client";
 
 const FeaturesCardPage = ({ datas }) => {
+    const session = authClient.useSession();
+  const user = session.data?.user;
   return (
     <Card className="w-full rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
 
@@ -64,7 +67,14 @@ const FeaturesCardPage = ({ datas }) => {
         </div>
 
         {/* Button */}
-        <Link href={`/allanimals/${datas.id}`} className="block">
+        <Link
+  href={
+    user
+      ? `/allanimals/${datas.id}`
+      : `/login?redirect=/allanimals/${datas.id}`
+  }
+  className="block"
+>
           <Button
             className="w-full mt-2 bg-green-600 text-white font-semibold py-6 rounded-xl hover:bg-green-700 transition-all duration-300"
             onClick={() => toast.success("Opening details page")}

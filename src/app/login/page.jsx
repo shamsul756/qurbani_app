@@ -12,6 +12,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import { GrGoogle } from "react-icons/gr";
 
 import { toast } from "react-toastify";
 
@@ -39,7 +40,11 @@ export default function SignIn() {
       toast.success("Registration successful!");
     }
   };
-
+const handleGogleLogin = async()=>{
+    await authClient.signIn.social({
+        provider: "google"
+    })
+}
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-gray-900 to-black px-4">
       <Card className="w-full max-w-md backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl rounded-3xl p-8 text-white">
@@ -98,7 +103,14 @@ export default function SignIn() {
             log In
           </Button>
        
+   <p className="divider text-center font-semibold">
+  <span className="">or</span>
+</p>
 
+<Button variant="outline" className="google-btn w-full text-white" onClick={handleGogleLogin}>
+  <GrGoogle className="google-icon" />
+  <span>Sign in with Google</span>
+</Button>
         
         
         </Form>
