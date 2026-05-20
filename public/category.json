@@ -2,51 +2,51 @@
   {
     "id": 1,
     "name": "Large Animal",
-    "description": "Big animals like cow, buffalo, horse used for farming, milk, and Qurbani."
+    "category": "Large Animal"
   },
   {
     "id": 2,
     "name": "Small Animal",
-    "description": "Medium and small livestock such as goat and sheep for meat and farming."
+    "category": "Large Animal"
   },
   {
     "id": 3,
     "name": "Poultry",
-    "description": "Domestic birds like chicken, duck, and turkey used for eggs and meat."
+    "category": "Poultry"
   },
   {
     "id": 4,
     "name": "Dairy Animal",
-    "description": "Animals mainly raised for milk production such as cow and buffalo."
+    "category": "Dairy Animal"
   },
   {
     "id": 5,
     "name": "Farm Animal",
-    "description": "General farm animals used for agriculture, transport, and labor."
+    "category": "Farm Animal"
   },
   {
     "id": 6,
     "name": "Pet Animal",
-    "description": "Domesticated animals kept for companionship and emotional support."
+    "category": "Meat Animal"
   },
   {
     "id": 7,
     "name": "Meat Animal",
-    "description": "Animals primarily raised for meat production."
+    "category": "Meat Animal"
   },
   {
     "id": 8,
     "name": "Riding Animal",
-    "description": "Animals used for riding and transport such as horses and camels."
+    "category": "Riding Animal"
   },
   {
     "id": 9,
     "name": "Exotic Animal",
-    "description": "Rare and foreign breed animals kept for breeding or specialty farming."
+    "category": "Exotic Animal"
   },
   {
     "id": 10,
     "name": "Utility Animal",
-    "description": "Animals used for multiple purposes like milk, meat, and farming support."
+    "category": "Utility Animal"
   }
 ]
