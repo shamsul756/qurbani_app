@@ -6,7 +6,7 @@ const CategoryPage = async () => {
   const res = await fetch(
     "https://qurbani-app-five.vercel.app/category.json"
   );
-
+// category
   const categories = await res.json();
 
   return (
