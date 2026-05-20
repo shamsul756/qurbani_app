@@ -13,14 +13,15 @@ const CategoryPage = async () => {
     <div className="flex flex-wrap gap-3 p-4 justify-center">
       {categories.map((category) => 
       
-        
-          <Button key={category.id}
+        <Link key={category.id} href={`?category=${category.name.toLowerCase()}`}>
+          <Button 
             variant="bordered"
             size="sm"
             className="font-medium text-black"
           >
             {category.name}
           </Button>
+          </Link>
         
       )}
     </div>
