@@ -23,7 +23,7 @@
     "location": "Chattogram",
     "description": "Strong and healthy bull, ideal for farming and Qurbani.",
     "image": "https://cdn.pixabay.com/photo/2016/08/06/19/23/highland-cow-1575005_1280.jpg",
-    "category": "Large Animal"
+    "category": "Small Animal, Dairy Animal"
   },
   {
     "id": 3,
@@ -62,7 +62,7 @@
     "location": "Rangpur",
     "description": "Strong crossbreed cow with high milk production.",
     "image": "https://images.pexels.com/photos/29815446/pexels-photo-29815446.jpeg",
-    "category": "Large Animal"
+    "category": "Utility Animal"
   },
   {
     "id": 6,

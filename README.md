@@ -1,3 +1,53 @@
+# Qurbani App
+
+## Project Overview
+Qurbani App is a modern and user-friendly web application designed to make the Qurbani process smooth, simple, and hassle-free. Users can easily browse and purchase their preferred cows and other Qurbani animals from the platform without facing unnecessary complications or crowding.
+
+The application focuses on providing a seamless digital experience with an attractive UI, smooth animations, and personalized user features.
+
+---
+
+## Live URL
+🔗 Live Website: https://qurbani-app-five.vercel.app/
+
+---
+
+## Key Features
+
+- Browse and select favorite Qurbani animals easily
+- Smooth and responsive modern user interface
+- User profile creation and management system
+- Users can update their profile name and profile image
+- Automatic profile information update after editing
+- Beautiful animations and interactive user experience
+- Fully responsive design for mobile, tablet, and desktop devices
+- Clean and organized dashboard experience
+
+---
+
+## Technologies Used
+
+### Frontend
+- Next.js
+- React.js
+- Tailwind CSS
+- Hero UI
+- React UI
+- Gravity UI
+
+---
+
+## NPM Packages Used
+
+- animate.css
+- react-spring
+
+---
+
+## Purpose of the Project
+The main goal of this project is to simplify the Qurbani animal purchasing process through a modern digital platform. The app helps users save time, avoid unnecessary hassle, and enjoy a smooth online experience while selecting and purchasing Qurbani animals.
+
+---
 <!-- navbar  -->
 ![alt text](image.png)
 <!-- footer  -->
