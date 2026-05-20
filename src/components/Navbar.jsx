@@ -99,10 +99,14 @@ const Navbar = () => {
             ) : (
               <div className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-full px-3 py-2">
                 <div className="flex items-center gap-3">
-                  <Avatar
-                    src={user.image || ""}
-                    className="ring-2 ring-green-500 shadow-lg"
-                  />
+                   <Avatar>
+                      <Avatar.Image
+                      src={user?.image}
+                      className="ring-2 ring-green-500"
+                      alt={user?.name}
+                      referrerPolicy="no-referrer"
+                      />
+                    </Avatar>
 
                   <div className="hidden xl:block">
                     <h3 className="text-sm font-semibold text-white leading-none">

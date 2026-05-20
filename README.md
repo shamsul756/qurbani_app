@@ -22,6 +22,10 @@
 ![alt text](image-8.png)
 <!-- logout page  -->
 ![alt text](image-10.png)
+<!-- update profail -->
+![alt text](image-11.png)
+<!-- update form -->
+![alt text](image-12.png)
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
